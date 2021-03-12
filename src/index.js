@@ -1,4 +1,4 @@
-var foo = 1;
+/* var foo = 1;
 var change = () => {
   this.foo = 2;
   console.log(this.foo);
@@ -13,7 +13,9 @@ console.log(foo);
 console.log(change());
 console.log(foo);
 console.log(obj.foo);
-console.log(bounded());
+console.log(bounded()); */
+
+
 /**
  * Check if a string is a palindrome
 

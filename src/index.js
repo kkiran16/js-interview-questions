@@ -285,3 +285,48 @@ function outter() {
   var a1 = 1;
   outter()();
   */
+
+  /* 
+  Output : 
+  yomesh
+  undefined
+  undefined
+  undefined
+
+  in the first case this === yomesh and in rest of the cases this === Person.prototype during invocation.
+
+  function Person(name) {
+    this.name = name;
+  }
+  
+  Person.prototype.sayName = function () {
+    console.log(this.name);
+  }
+  
+  var yomesh = new Person('yomesh');
+  
+  console.log(yomesh.sayName());
+  console.log(Person.prototype.sayName());
+  console.log(Object.getPrototypeOf(yomesh).sayName());
+  console.log(yomesh.__proto__.sayName()); */
+
+
+
+  /* 
+  // Revrese a String
+  function reverse(string) {
+    let i;
+    let temp;
+    const limit = parseInt(string.length / 2, 10);
+  
+    for (i = 0; i < limit; i++) {
+      temp = string[i];
+      string[i] = string[string.length - i - 1];
+      string[string.length - i - 1] = temp;
+    }
+  
+    return string;
+  }
+  
+  const reversed = reverse("hello");
+  console.log(reversed); */

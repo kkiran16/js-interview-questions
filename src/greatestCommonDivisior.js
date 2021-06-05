@@ -9,7 +9,7 @@ function greatestCommonDivisor(num1, num2){
     const i = Math.floor(smallestNumber / 2)
     let j = 1
     let commonDivisor = j
-     while(j <= i){
+    while(j <= i){
         if(num1 % j === 0 && num2 % j === 0){
             commonDivisor = j
         }

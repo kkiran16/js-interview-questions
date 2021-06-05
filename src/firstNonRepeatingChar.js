@@ -1,5 +1,7 @@
 //Hello World
 
+//Map maintains insertion order
+
 function firstNonRepeatingChar(str){
     const strFreq = new Map()
     for(let i=0 ; i < str.length; i++){

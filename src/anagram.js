@@ -21,6 +21,7 @@ function areMapsEqual(map1, map2) {
         return true
     }
 }
+
 function computeFrequency(ipStr) {
     let strMap = new Map()
     for (let index = 0; index < ipStr.length; index++) {
